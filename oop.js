@@ -1,4 +1,4 @@
-class Animal {
+class Animal_Kingdom {
   constructor(backBone, withOutBackBone, coldBlooded, warmBlooded) {
     this.backBone;
     this.withOutBackBone;
@@ -34,14 +34,14 @@ class Animal {
   breathing = "we all need oxygen to survive";
   static summary = "all other classes below are under the kingdom class";
 }
-let all = new Animal();
+let all = new Animal_Kingdom();
 console.log(all);
 all.setBackBone("they have back bone");
 all.setWarmBlooded("they are warm-blooded in mature");
 all.setColdBlooded("they are cold-blooded in nature");
 all.setWithOutBackBone("they do not have back bone");
 console.log(all.getBackBone());
-class Mammals extends Animal {
+class Mammals extends Animal_Kingdom {
   constructor(backBone, warmBlooded) {
     super(backBone, warmBlooded);
     this.warmBlooded = warmBlooded;
@@ -72,7 +72,7 @@ mammal.setBackBone(true);
 mammal.setWarmBlooded("they are warm blooded in nature");
 console.log(mammal);
 
-class Fish extends Animal {
+class Fish extends Animal_Kingdom {
   constructor(
     backBone,
 
@@ -91,7 +91,7 @@ class Fish extends Animal {
 let fish = new Fish("has back bone", "is cold blooded in nature");
 console.log(fish);
 
-class Aves extends Animal {
+class Aves extends Animal_Kingdom {
   constructor(warmBlooded, backBone) {
     super(warmBlooded, backBone);
     this.warmBlooded = warmBlooded;
@@ -130,7 +130,7 @@ pegion.setHasFeathers(true);
 console.log(pegion.getEyes());
 console.log(pegion.getHasFeathers());
 
-class Arthropoda extends Animal {
+class Arthropoda extends Animal_Kingdom {
   constructor(coldBlooded, withOutBackBone) {
     super(coldBlooded, withOutBackBone);
   }
@@ -153,7 +153,7 @@ let ant = new Arthropoda();
 ant.setWithOutBackBone("does not have a back bone");
 ant.setColdBlooded("they are cold-blooded in nature");
 console.log(ant);
-class Amphibians extends Animal {
+class Amphibians extends Animal_Kingdom {
   constructor(coldBlooded, backBone) {
     super(coldBlooded, backBone);
     this.coldBlooded = coldBlooded;
@@ -165,7 +165,7 @@ class Amphibians extends Animal {
 let frog = new Amphibians("is cold-blooded in nature", true);
 console.log(frog);
 
-class Reptilia extends Animal {
+class Reptilia extends Animal_Kingdom {
   constructor(warmBlooded, backBone, leg) {
     super(warmBlooded, backBone);
     this.leg = leg;
